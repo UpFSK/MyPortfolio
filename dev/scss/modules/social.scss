@@ -1,0 +1,32 @@
+.social__item {
+  @include inline-block(buttom);
+  margin-right: 27px;
+}
+
+.social__link {
+  display: block;
+  font-size: 0px;
+
+  .icon {
+    fill: $white;
+  }
+
+  &:hover {
+    .icon {
+      fill: $green;
+    }
+  }
+
+  .icon-vk {
+    width: 31px;
+    height: 22px;
+  }
+  .icon-github {
+    width: 26px;
+    height: 22px;
+  }
+  .icon-in {
+    width: 24px;
+    height: 22px;
+  }
+}

@@ -1,0 +1,11 @@
+.bg-text-portfolio {
+  fill: rgba($white, .1);
+  .icon-portfolio_header {
+    width: 1176px;
+    height: 313px;
+  }
+}
+
+.header__bg-text-portfolio {
+  @include centered();
+}

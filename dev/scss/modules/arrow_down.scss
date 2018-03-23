@@ -1,0 +1,12 @@
+.header__arrow-down {
+  @include centered(x);
+  bottom: 70px;
+}
+
+.arrow-down {
+  fill: rgba($white, .7);
+  .icon-arrow_down {
+    width: 26px;
+    height: 16px;
+  }
+}

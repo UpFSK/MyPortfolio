@@ -18,6 +18,11 @@
   }
 }
 
+@mixin inline-block($vars: middle) {
+  display: inline-block;
+  vertical-align: $vars;
+}
+
 %clearfix {
   &:after {
     content: "";

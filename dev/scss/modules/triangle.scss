@@ -1,0 +1,13 @@
+.triangle {
+  position: absolute;
+  top: $header-height - 161px;
+  z-index: 1;
+}
+
+.triangle_fill_light-green {
+  fill: #ebefe2;
+}
+
+.triangle_fill_white{
+  fill: #f4f5f0;
+}

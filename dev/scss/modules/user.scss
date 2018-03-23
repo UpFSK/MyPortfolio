@@ -1,0 +1,29 @@
+.header__user {
+  @include centered();
+}
+
+.user {
+  font-family: 'Roboto';
+  text-align: center;
+}
+
+.user__photo {
+  width: 141px;
+  height: 141px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  @include inline-block();
+}
+
+.user__name {
+  font-size: 35px;
+  font-weight: 500;
+  color: $white;
+}
+
+.user__description {
+  color: $white;
+  font-weight: 400;
+}

@@ -1,0 +1,47 @@
+extends ../layout
+
+block title
+    title About
+
+block header
+    header.header
+        ul.social.header__social
+            each social in ['vk', 'github', 'in']
+                li.social__item
+                    a(href="#").social__link= social
+                        +icon(social)
+
+
+        .hamburgers.header__hamburgers
+            +icon('hamburger')
+
+        .bg-text-portfolio.header__bg-text-portfolio
+            +icon('portfolio_header')
+
+
+        .user.header__user
+            .user__photo
+                img(src="img/my-user-photo.png").user__my-photo
+            .user__name Кисляков Александр
+            .user__description Личный блог веб разработчика
+
+        .arrow-down.header__arrow-down
+            +icon('arrow_down')
+
+block content
+    svg(viewbox="0 0 1000 85" preserveAspectRatio="none").triangle.triangle_fill_light-green
+        polygon(points="0,0 0,85 500,85")
+    svg(viewbox="0 0 1000 85" preserveAspectRatio="none").triangle.triangle_fill_white
+        polygon(points="1000,0 1000,85 500,85")
+
+    .container
+
+
+    section.map
+        .contacts
+            .title.contacts__title
+                h2  Контакты
+            ul.contacts__list
+                each contacts in ['Скайп', 'Mail', 'Tel', 'Addres']
+                    li.contacts__title
+                        a(href="#").contacts__link= contacts

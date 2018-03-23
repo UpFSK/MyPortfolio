@@ -1,5 +1,7 @@
 extends ../layout
 
 block content
-
-
+    ul
+        li
+            each navNan, nam in nav.navPages
+                a(href=`${navNan}`)= nam
