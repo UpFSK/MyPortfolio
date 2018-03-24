@@ -1,0 +1,28 @@
+.comment {
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.comment__text, .comment__author {
+  color: rgba($white, .5);
+  font-style: italic;
+}
+
+.comment__author {
+  margin-top: 13px;
+  font-weight: bold;
+  padding-left: 15px;
+  position: relative;
+
+  &::before {
+    content: '';
+
+    @include centered(y);
+    left: 0px;
+    width: 10px;
+    height: 3px;
+    background: rgba($white, .5);
+  }
+}

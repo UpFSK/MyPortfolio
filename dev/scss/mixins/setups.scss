@@ -10,6 +10,7 @@ body, html {
 body {
   font-size: 16px;
   line-height: 1.42;
+  font-family: 'Roboto';
   -webkit-font-smoothing: antialiased;
 }
 
@@ -19,17 +20,14 @@ body {
   position: relative;
   min-width: $container + 20px;
 }
-
+/*
 .wrapper:after {
   content: "";
   display: block;
-  height: 50px;
+  //height: $footer-height;
   overflow: hidden;
 }
-
-.empty {
-  height: $footer-height;
-}
+*/
 /*
 .container {
   width: $container;
@@ -50,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px;
   padding: 0px;
 }
-
+/*
 footer {
   background: #ccc;
   height: $footer-height;
@@ -59,3 +57,4 @@ footer {
   position: relative;
   min-width: $container + 20px;
 }
+*/

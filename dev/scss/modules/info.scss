@@ -1,0 +1,32 @@
+.about__info {
+  width: 50%;
+  float: left;
+}
+
+
+.info__title {
+  text-align: center;
+}
+
+
+.info__title-h2 {
+  text-align: center;
+  height: 72px;
+
+  margin-bottom: 32px;
+}
+
+.info__photo {
+  width: 443px;
+  height: 390px;
+  overflow: hidden;
+
+  margin-bottom: 40px;
+}
+
+.info__description {
+  width: 400px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: $title-color-h2;
+}

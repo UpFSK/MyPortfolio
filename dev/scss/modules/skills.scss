@@ -1,0 +1,36 @@
+.skill__description {
+  font-family: 'Roboto';
+  color: $title-color-h2;
+
+  margin-bottom: 67px;
+}
+
+.skills__list {
+  margin-bottom: 30px;
+}
+
+.skills__title {
+  color: $title-color-h2;
+  font-size: 25px;
+  font-family: 'Roboto';
+
+  margin-bottom: 15px;
+}
+
+.skills__item {
+  width: 120px;
+  height: 120px;
+  @include inline-block(top);
+  position: relative;
+}
+
+.skills__name {
+  @include centered();
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #77a266;
+}
+
+.skills__item {
+  margin-right: 40px;
+}

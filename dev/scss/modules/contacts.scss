@@ -1,0 +1,43 @@
+.contacts {
+  width: 380px;
+  height: 312px;
+  background: rgba($white, .85);
+
+  border-radius: 5px;
+
+  @include centered();
+
+  padding-top: 30px;
+}
+
+.contacts__title {
+  text-align: center;
+  height: 65px;
+  margin-bottom: 30px;
+}
+
+.title-h2__text {
+  display: inline-block;
+}
+
+.contacts__list {
+  margin-left: 75px;
+}
+
+.contacts__item {
+  margin-bottom: 20px;
+
+  .icon {
+    fill: #6c9c5a;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 34px;
+  }
+}
+
+.contacts__link {
+  font-family: $main-fonts;
+  color: #65777c;
+  text-decoration: none;
+}

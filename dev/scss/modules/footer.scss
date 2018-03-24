@@ -1,3 +1,55 @@
 .footer {
-  color: black;
+  width: 100%;
+  height: $footer-height;
+  background: rgba($footer-bg, .85);
+  position: absolute;
+  margin-top: -$footer-height;
+
+  @extend %clearfix;
+}
+
+.footer__left, .footer__center, .footer__right {
+  width: 33.3%;
+  float: left;
+  padding: 30px;
+}
+
+.footer__center {
+  position: relative;
+  &::after, &::before {
+    content: '';
+    position: absolute;
+
+    width: 1px;
+    height: 87px;
+    background: #69716e;
+  }
+
+  &::after {
+    top: 30px;
+    right: 0px;
+  }
+
+  &::before {
+    left: 0px;
+  }
+}
+
+.footer__text {
+  width: 365px;
+  color: $white;
+}
+
+.footer__social {
+  margin-top: 30px;
+}
+
+.social__link.footer__socia-link {
+  .icon {
+    fill: rgba($white, .5);
+
+    &:hover {
+      fill: $white;
+    }
+  }
 }

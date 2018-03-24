@@ -1,0 +1,35 @@
+.circles {
+  fill: none;
+  stroke-width: 20;
+}
+
+.circle_first {
+  stroke: #dfdcd5;
+}
+
+.circle_second {
+  stroke: #77a266;
+  stroke-dasharray: .001 282.6;
+  transition: all 5s;
+
+}
+
+@each $skills in HTML5, CSS3, JS, PHP, mySQL, Node, Mongo, Git, Gulp, Bower {
+  ##{$skills} {
+    stroke-dasharray: 250 282.6;
+    animation-iteration-count: 1;
+    animation: load 6s;
+  }
+
+  @keyframes load {
+    0% {
+      stroke-dasharray: 0 282.6;
+    }
+
+    100% {
+      stroke-dasharray: 250 282.6;
+    }
+  }
+}
+
+

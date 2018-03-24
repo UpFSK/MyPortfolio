@@ -1,0 +1,23 @@
+.title {
+  font-family: 'Sansus';
+  color: $title-color;
+  font-size: 33px;
+  text-transform: uppercase;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90px;
+    height: 3px;
+    background: $title-color;
+  }
+}
+
+.title-h2 {
+  font-size: 22px;
+}

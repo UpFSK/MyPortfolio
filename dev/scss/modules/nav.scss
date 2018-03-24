@@ -1,0 +1,9 @@
+.nav__item {
+  margin-right: 35px;
+  @include inline-block();
+}
+
+.nav__link {
+  color: $white;
+  text-decoration: none;
+}

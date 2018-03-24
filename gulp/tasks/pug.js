@@ -7,7 +7,6 @@ module.exports = function() {
               
               locals : {
                   nav: JSON.parse($.fs.readFileSync('./dev/pug/json/navigation.json', 'utf8')),
-                  content: JSON.parse($.fs.readFileSync('./dev/pug/json/navigation.json', 'utf8')),
               },
               pretty: true
           }))

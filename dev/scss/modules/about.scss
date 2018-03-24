@@ -1,0 +1,33 @@
+.about {
+  @extend %clearfix;
+
+  &__left {
+    position: relative;
+    background: #ebefe2;
+    float: left;
+    width: 50%;
+    padding-bottom: 120px;
+  }
+
+  &__right {
+    position: relative;
+    background: #f4f5f0;
+    float: right;
+    width: 50%;
+  }
+}
+
+.about__skills {
+  width: 790px;
+  margin: 0px auto;
+}
+
+.st0{
+  stroke-miterlimit: 5;
+  -moz-transform: rotate(-90deg); /* Для Firefox */
+  -ms-transform: rotate(-90deg); /* Для IE */
+  -webkit-transform: rotate(-90deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-90deg); /* Для Opera */
+  transform: rotate(-90deg);
+}
+
